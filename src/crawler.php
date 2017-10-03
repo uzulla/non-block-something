@@ -43,7 +43,7 @@ foreach ($config->target_ch_id_list as $target_ch_id) {
         $target_ch_id_dir = "{$config->base_files_dir}/{$target_ch_id}";
         $id_base_path = "{$target_ch_id_dir}/{$id}";
 
-        if(!file_exists($target_ch_id_dir)) mkdir($target_ch_id_dir);
+        if (!file_exists($target_ch_id_dir)) mkdir($target_ch_id_dir);
 
         if ($db->isExistsId($id)) {
             continue;
@@ -59,7 +59,7 @@ foreach ($config->target_ch_id_list as $target_ch_id) {
         fclose($mp3_fh);
         fclose($dl_fh);
 
-        if(!$db->insert($id, $target_ch_id, $title, $start_at)) die("db insert error");
+        if (!$db->insert($id, $target_ch_id, $title, $start_at)) die("db insert error");
     }
 }
 

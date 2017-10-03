@@ -1,1 +1,1 @@
-<?php require __DIR__."/../src/rss.php";
+<?php require __DIR__ . "/../src/rss.php";
