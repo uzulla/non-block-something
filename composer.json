@@ -1,0 +1,10 @@
+{
+    "require": {
+        "suin/php-rss-writer": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "" : "src/"
+        }
+    }
+}
